@@ -7,3 +7,14 @@
 }
 
 /* font-family: 'Montserrat', sans-serif; */
+
+/* navbar */
+.navbar{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  box-shadow: 0px 4px 6px -6px gray;
+}
+.nav-link{
+  font-weight: 300 !important;
+}

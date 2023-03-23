@@ -1,0 +1,9 @@
+.footer{
+    padding: 25px;
+
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}

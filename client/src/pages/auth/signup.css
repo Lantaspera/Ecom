@@ -1,0 +1,152 @@
+.split .logo-title{
+    width: 100%;
+    margin-top: 70px;
+    
+    display: flex;
+    padding: 10px;
+}
+
+.signup-header1{
+    font-size:  2.25rem;
+    font-weight: 700;
+}
+.signup-header2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.signup-text{
+    text-decoration: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+small{
+    font-size: 80%;
+    text-align: center;
+}
+.split{
+    justify-content: left;
+    top: 50%;
+
+}
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    height: 400px;
+    background: rgba(229, 229, 229, 0.41);
+}
+.left .content-center{
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+ .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left .split{
+    color: #3751FE;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+.left .para-text{
+    font-weight: 400;
+    color: black;
+}
+.right .r-split{
+    color: #111;
+    text-align: center;
+}
+.right .r-split .para-text{
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+}
+.right .form-signup{
+    width: 400px;
+}
+.google{
+   width: 100%;
+   padding: 10px  10px; 
+   background: rgb(247, 98, 98);
+   border: 1px solid rgb(221, 216, 216);
+   border-radius: 6px;
+   margin: 0 0 15px 0;
+   
+   
+}
+.fa-google{
+    color: white;
+    margin-right: 15px;
+}
+form input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+
+}
+.signup-label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.input-container.password{
+    position: relative;
+}
+.checkbox-container input{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: -5px;
+    left: 0;
+}
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 3rem;
+    cursor: pointer;
+    font-size: 14px;
+    top: 10px;
+}
+
+.signup-btn{
+    display: block;
+    width: 100%;
+    background:#5048E5;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+.signup-btn:hover{
+    background: #2c4893;
+    cursor: pointer;
+}
+.validation{
+    color: red;
+}
+@media screen and (min-width:900px) {
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left, .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
