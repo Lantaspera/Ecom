@@ -30,6 +30,11 @@ function Header() {
           </NavLink>
         </li>
         <li className="nav-item">
+          <NavLink to='/' className="nav-link">
+            Login
+          </NavLink>
+        </li>
+        <li className="nav-item">
           <NavLink to='/' className="nav-link" >
             Cart (0)
           </NavLink>
