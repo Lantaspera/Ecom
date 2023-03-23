@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Layout from '../../components/layout/Layout'
 import './signup.css'
 import {Link} from 'react-router-dom'
-
+import {toast} from 'react-toastify'
 
 function Signup() {
 
@@ -13,6 +13,7 @@ const [password,setPassword] = useState('')
 const handleSubmit = (e) =>{
   e.preventDefault();
   console.log(name,email,password);
+  toast.success('Register Successfuly')
 }
 
   return (

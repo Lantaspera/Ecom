@@ -3,6 +3,8 @@ import About from './pages/About';
 import Signup from './pages/auth/Signup';
 import Home from './pages/Home';
 import PagenotFound from './pages/PagenotFound';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
