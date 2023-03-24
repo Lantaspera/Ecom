@@ -1,0 +1,119 @@
+.login-logo-title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+}
+
+.login-header1{
+    font-size:  2.25rem;
+    font-weight: 700;
+}
+.login-header2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.login-text{
+    text-decoration: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.login-split{
+    justify-content: left;
+    top: 50%;
+
+}
+.login-split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.login-left{
+    height: 400px;
+    background: rgba(229, 229, 229, 0.41);
+}
+.login-left .login-content-center{
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+ .login-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-left .login-split{
+    color: #3751FE;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+.login-left .login-para-text{
+    font-weight: 400;
+    color: black;
+}
+.login-right .login-right-split{
+    color: #111;
+    text-align: center;
+}
+.login-right .login-right-split .login-para-text{
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+}
+.login-right .form-login{
+    width: 400px;
+}
+.login-google{
+   width: 100%;
+   padding: 5px ; 
+   background: rgb(247, 98, 98);
+   border: 1px solid rgb(221, 216, 216);
+   border-radius: 6px;
+   margin: 30px 0 15px 0;
+}
+.form-login .login-inputs{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+
+}
+.login-label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.login-btn{
+    display: block;
+    width: 100%;
+    background:#5048E5;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+.login-btn:hover{
+    background: #2c4893;
+    cursor: pointer;
+}
+.validation{
+    color: red;
+}
+@media screen and (min-width:900px) {
+    .login-split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .login-left, .login-right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
