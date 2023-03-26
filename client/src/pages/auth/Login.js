@@ -5,10 +5,12 @@ import {Link} from 'react-router-dom'
 import toast from 'react-hot-toast'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../../context/auth'
+
 
 function Login() {
     
-    
+    const [auth,setAuth]=useAuth()
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
     const navigate = useNavigate()
@@ -21,6 +23,11 @@ function Login() {
           );
           if(res && res.data.success){
               toast.success(res.data.message)
+              setAuth({
+                ...auth,
+                user: res.data.user,
+                token: res.data.token,
+              })
               navigate('/')
           }else{
               toast.error(res.data.message)
