@@ -7,7 +7,7 @@ function Header() {
   const [auth,setAuth] = useAuth()
   const handleLogout =()=>{
     setAuth({
-      ...auth, user:null,token:''
+      ...auth, user:null,token:'',
     })
     localStorage.removeItem('auth')
     toast.success('Logout Successfully')
