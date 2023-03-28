@@ -14,7 +14,7 @@ function Header() {
   }
   return (
     <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar sticky-top navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -46,12 +46,26 @@ function Header() {
             Login
           </NavLink>
           </li>
-          </>):(<>
-            <li className="nav-item">
-          <NavLink onClick={handleLogout} to='/login' className="nav-link">
-            Logout
-          </NavLink>
-          </li>
+          </>):(
+          <>
+          <li className="nav-item dropdown">
+            <NavLink to='/' className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             {auth?.user?.name}
+            </NavLink>
+            <ul className="dropdown-menu">
+            <li>
+              <NavLink to={`/dashboard/${auth?.user?.role === 1 ? "admin":"user"}`} className="dropdown-item">
+                Dashboard
+              </NavLink>
+            </li>
+            <li>
+              <NavLink onClick={handleLogout} to='/login' className="dropdown-item">
+                Logout
+              </NavLink>
+            </li>
+          </ul>
+        </li>
+            
           </>)
         }
         
