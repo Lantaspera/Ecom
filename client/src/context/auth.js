@@ -1,4 +1,4 @@
-import { useState, useContext, createContext, Children, useEffect } from "react";
+import { useState, useContext, createContext, useEffect } from "react";
 import axios from "axios";
 
 const AuthContext = createContext();
@@ -23,6 +23,7 @@ const AuthProvider = ({children})=>{
                 token: parseData.token,
             });
         }
+        //eslint-disable-next-line
     },[]);
 
     return(
