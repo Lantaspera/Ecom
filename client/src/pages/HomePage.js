@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Layout from "../components/layout/Layout";
+import Layout from "./../components/layout/Layout";
+
 import axios from "axios";
 import { Checkbox, Radio } from "antd";
 import { Prices } from "../components/Prices";
@@ -100,7 +101,7 @@ const HomePage = () => {
     }
   };
   return (
-    <Layout title={"ALl Products - Best offers "}>
+    <Layout title={"All Products - Best offers "}>
       <div className="container-fluid row mt-3">
         <div className="col-md-2">
           <h4 className="text-center">Filter By Category</h4>
