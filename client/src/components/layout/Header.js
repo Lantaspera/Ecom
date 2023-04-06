@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useAuth } from '../../context/auth'
 import { toast } from 'react-hot-toast'
-import SearchField from './SearchField'
+import SearchField from '../Form/SearchField'
 import './header.css'
 import skt from '../../../src/images/skt.png'
 import { BsCart} from 'react-icons/bs';
