@@ -2,38 +2,55 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useAuth } from '../../context/auth'
 import { toast } from 'react-hot-toast'
+import SearchField from './SearchField'
+import './header.css'
+import skt from '../../../src/images/skt.png'
+import { BsCart} from 'react-icons/bs';
+import { AiOutlineHeart} from 'react-icons/ai';
+
+
+
 
 function Header() {
   const [auth,setAuth] = useAuth()
   const handleLogout =()=>{
     setAuth({
-      ...auth, user:null,token:'',
     })
     localStorage.removeItem('auth')
     toast.success('Logout Successfully')
   }
   return (
     <>
-    <nav className="navbar navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar sticky-top navbar-expand-lg " color='#595959'>
   <div className="container-fluid">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
       <NavLink to='/'  className="navbar-brand" href="#">
-        Sketch Genz
+       <img className='logo_min' src={skt} alt='logo'/>
       </NavLink>
-      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <NavLink to='/' className="nav-link active" >
+      <ul className="navbar-nav ms-auto mb-2 mb-lg-0" >
+      <li className="nav-item">
+          <NavLink to='/' className="nav-link" >
             Home
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to='/category' className="nav-link active" >
-            Category
+          <NavLink to='/category' className="nav-link"  >
+            Mens
           </NavLink>
         </li>
+
+        <li className="nav-item">
+          <NavLink to='/category' className="nav-link" >
+            Womens
+          </NavLink>
+        </li>
+      </ul>
+      <SearchField/>
+      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+        
         {
           !auth.user?(<>
           <li className="nav-item">
@@ -71,7 +88,12 @@ function Header() {
         
         <li className="nav-item">
           <NavLink to='/cart' className="nav-link" >
-            Cart (0)
+            <AiOutlineHeart/>
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to='/cart' className="nav-link" >
+          <BsCart/>
           </NavLink>
         </li>
         
