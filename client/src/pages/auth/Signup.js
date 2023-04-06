@@ -4,7 +4,10 @@ import './signup.css'
 import {Link} from 'react-router-dom'
 import toast from 'react-hot-toast'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import img1 from "../../images/img1.png";
+import { FcGoogle } from 'react-icons/fc';
+import { FaFacebook } from 'react-icons/fa';
 
 function Signup() {
 
@@ -36,13 +39,7 @@ const handleSubmit = async(e) =>{
       <div className="split-screen"> 
             <div className="left"> 
                 <section className="split">
-                    <span className="logo-title">
-                        <h3 className="logo-signup">Logoname</h3>
-                    </span>
-                    <span className="content-center">
-                        <h1 className="signup-header1">Lorem Ipsum is simply dummy text of the printing</h1>
-                        <p className="para-text"> Welcome  Please Sign Up to your account. </p>
-                    </span>
+                    <img className='signup_image' src={img1} alt='image1'/>
                 </section>
             </div>
 
@@ -53,11 +50,17 @@ const handleSubmit = async(e) =>{
                     <h2 className="signup-header2">Sign Up</h2>
                     <div className="login-container">
                         <button className="google" >
-                            <span className="google-space">
-                                <Link to='*' className="signup-text" ><i class="fab fa-google"></i>Sign up with Google</Link >
-                            </span>
+                        
+                                <Link to='*' className="signup-text" ><FcGoogle/></Link >
+                         
+                        </button>
+                        <button className="google" >
+                        
+                                <Link to='*' className="signup-text" ><FaFacebook color='#4267B2'/></Link >
+                         
                         </button>
                     </div>
+                    <h1 className='or_section'>or</h1>
                 </section>
                 <div className="input-container">
                     <label className="signup-label" for="username"  >Name</label>

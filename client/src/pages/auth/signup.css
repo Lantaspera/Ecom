@@ -1,87 +1,116 @@
-.split .logo-title{
+.split .logo-title {
     width: 100%;
     margin-top: 70px;
-    
+
     display: flex;
     padding: 10px;
 }
 
-.signup-header1{
-    font-size:  2.25rem;
-    font-weight: 700;
+.signup_image {
+    width: 620px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 30px;
+
 }
-.signup-header2{
+
+.signup-header1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:#344767;
+}
+
+.signup-header2 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
+    color:#344767;
+    margin-top: 20px;
+   
 }
-.signup-text{
+
+.signup-text {
     text-decoration: none;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-small{
+
+small {
     font-size: 80%;
     text-align: center;
 }
-.split{
+
+.split {
     justify-content: left;
     top: 50%;
 
 }
-.split-screen{
+
+.split-screen {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
-.left{
-    height: 400px;
-    background: rgba(229, 229, 229, 0.41);
-}
-.left .content-center{
+
+
+
+.left .content-center {
     text-align: center;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
- .right{
+
+.right {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-.left .split{
+
+.left .split {
     color: #3751FE;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
-.left .para-text{
+
+.left .para-text {
     font-weight: 400;
     color: black;
 }
-.right .r-split{
+
+.right .r-split {
     color: #111;
     text-align: center;
 }
-.right .r-split .para-text{
+
+.right .r-split .para-text {
     margin: 1.5rem 0;
     font-size: 0.875rem;
 }
-.right .form-signup{
+
+.right .form-signup {
     width: 400px;
 }
-.google{
-   width: 100%;
-   padding: 10px  10px; 
-   background: rgb(247, 98, 98);
-   border: 1px solid rgb(221, 216, 216);
-   border-radius: 6px;
-   margin: 0 0 15px 0;
+
+.google {
+    
+    border: 1px solid rgb(221, 216, 216);
+    border-radius: 6px;
+   width: 12%;
+   margin-right: 15px;
+   padding-bottom: 5px;
+  
+  
    
-   
+
+
 }
-.fa-google{
-    color: white;
-    margin-right: 15px;
-}
-form input{
+
+
+
+form input {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -92,15 +121,18 @@ form input{
     font-size: 0.875rem;
 
 }
-.signup-label{
+
+.signup-label {
     display: block;
     margin-bottom: 0.5rem;
     font-size: 0.75rem;
 }
-.input-container.password{
+
+.input-container.password {
     position: relative;
 }
-.checkbox-container input{
+
+.checkbox-container input {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -110,6 +142,7 @@ form input{
     top: -5px;
     left: 0;
 }
+
 .checkbox-container {
     display: block;
     position: relative;
@@ -119,10 +152,10 @@ form input{
     top: 10px;
 }
 
-.signup-btn{
+.signup-btn {
     display: block;
     width: 100%;
-    background:#5048E5;
+    background: #5048E5;
     color: white;
     font-weight: 700;
     border: none;
@@ -132,21 +165,48 @@ form input{
     letter-spacing: 0.5px;
     margin-top: 20px;
 }
-.signup-btn:hover{
+.login-container{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.or_section{
+color: #ADB5BD;
+font-weight: 600;
+font-size: 1rem;
+}
+.signup-btn:hover {
     background: #2c4893;
     cursor: pointer;
 }
-.validation{
+
+.validation {
     color: red;
 }
-@media screen and (min-width:900px) {
-    .split-screen{
-        flex-direction: row;
-        height: 100vh;
-    }
-    .left, .right{
+
+@media only screen and (max-width: 600px) {
+    .split-screen {
+        flex-direction: column;
         display: flex;
-        width: 50%;
-        height: auto;
+        justify-content: center;
+
+    }
+
+    .left {
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+    .signup_image {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        height: 220px;
+        margin-top: 25px;
+        margin-bottom: 20px;
     }
 }

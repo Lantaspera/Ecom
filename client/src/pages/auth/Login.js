@@ -6,6 +6,7 @@ import toast from 'react-hot-toast'
 import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../../context/auth'
+import img1 from "../../images/img1.png";
 
 
 function Login() {
@@ -46,15 +47,12 @@ function Login() {
         <Layout title='Login - ecommerce'>
         <div className="login-split-screen">
             <div className="login-left">
-                <section className="login-split">
-                    <span className="login-logo-title">
-                        <h3 className="login-logo">Logoname</h3>
-                    </span>
-                    <span className="login-content-center">
-                        <h1 className="login-header1">Lorem Ipsum is simply dummy text of the printing</h1>
-                        <p className="login-para-text"> Welcome  Please Sign Up to your account. </p>
-                    </span>
+                
+            <div className="left"> 
+                <section className="split">
+                    <img className='signup_image' src={img1} alt='image1'/>
                 </section>
+            </div>
             </div>
             <div className="login-right">
                 <form className="form-login" onSubmit={handleSubmit}>
