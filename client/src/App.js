@@ -16,12 +16,14 @@ import UpdateProduct from './pages/admin/UpdateProduct';
 import Orders from './user/Orders';
 import HomePage from './pages/HomePage';
 import Search from './pages/Search';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   return (
     <>
       <Routes>
         <Route path='/' element={<HomePage/>} />
+        <Route path="/product/:slug" element={<ProductDetails />} />
         <Route path="/search" element={<Search/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/signup' element={<Signup/>}/>
